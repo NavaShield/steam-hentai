@@ -5,8 +5,8 @@ function loopThroughSplittedText(splittedText) {
         // for each iteration console.log a word
         (function (i) {
             // and make a pause after it
-            AddFreeLicense(splittedText[i]);
             setTimeout(function () {
+                AddFreeLicense(splittedText[i]);
             })(i);
         }, 1000 * i);
     }
